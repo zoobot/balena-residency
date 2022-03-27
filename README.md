@@ -1,6 +1,8 @@
 # Hi-Dolly
 **text to image art**
-[![Hi-Dolly](https://raw.githubusercontent.com/zoobot/hidolly/main/logo.png)]
+
+![Hi-Dolly](https://raw.githubusercontent.com/zoobot/hidolly/main/logo.png)
+
 ## Highlights
 
 - **Example balenablock**: An example for you to start building your own balenablocks!
