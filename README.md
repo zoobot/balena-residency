@@ -5,7 +5,7 @@
 
 ## Status
  
-I've decided to make a mini Exploratorium science lab for the street because those little libraries and art galleries are so cute. With a mini science lab, there can be a lot of neighborhood magnet and rocks sharing, which is great, plus small electronic science and robotic experiments. First round mini lab "exhibit" will be sms and web speech to text to image generator to pi TFT.
+I've decided to make a mini Exploratorium science lab for the street because those little libraries and art galleries are so cute. With a mini science lab, there can be a lot of neighborhood magnet and rocks sharing, which is great, plus small electronic science and robotic experiments. First round mini lab "exhibit" will be sms and web speech to text to image generator to pi TFT. Thanks to [@nucleardreamer](https://github.com/nucleardreamer) for all the great ideas and for working on this with me!
 
 ## Highlights
 
