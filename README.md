@@ -52,10 +52,8 @@ OR local dev
 6. Setup Twilio account and get a phone number and setup balena public urls on the twiml and phone api messaging
 
 ### Deploying
-
-[![Deploy with balena](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/zoobot/hidolly)
-
-Or add the following service to your `docker-compose.yml`:
+ 
+Need to figure out multiarchitecture/multifleet deployment.
 
 ## Documentation
 
