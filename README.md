@@ -4,16 +4,23 @@
 ![Hi-Dolly](https://raw.githubusercontent.com/zoobot/hidolly/main/logo.png)
 
 ## Status
+ 
+I've decided to make a mini Exploratorium science lab for the street because those little libraries and art galleries are so cute. With a mini science lab, there can be a lot of neighborhood magnet and rocks sharing, which is great, plus small electronic science and robotic experiments. First round mini lab "exhibit" will be sms and web speech to text to image generator to pi TFT.
 
-#status 
-I've decided to make a mini Exploratorium science lab for the street because those little libraries and art galleries are so cute. With a mini science lab, there can be a lot of neighborhood magnet and rocks sharing, which is great, plus small electronic science and robotic experiments. First round mini lab "exhibit" will be voice to text to image generator on the mini wall with pi TFT hooked up to pi. Next I'd like to have a mini iron sand zen garden with magnet "scholar stones" and a few hall switches to play with. 
+## Highlights
+
+- **Chrome Speech to Text Web Api**: talk at your internet browser!
+- **Twilio Node Api**: SMS to Nodejs to SQLite, save your texts for eternity on a pi
+- **Motion Sensor Magic** Wave hand in the air and stuff happens, magically
+- **SQGAN-CLIP Art**: Generated Images
 
 ### What I have working so far: 
 
 1) [x] [twilio-block](https://github.com/zoobot/twilio-block) sms /web speech to text -> node server to sqlite on pi zero fleet. (Could this be a balena block?)
 2) [x] SQGAN-CLIP dockerized and generating images on the NUC
-3) [x] motion sensor trigger to turn on an off microphone
+3) [x] motion sensor trigger to turn on an off web microphone
 4) [x] a box for the mini lab
+5) [x] randomized display for images
 
 ### Todo:
 
@@ -27,14 +34,8 @@ I've decided to make a mini Exploratorium science lab for the street because tho
 ### Nice to haves:
 
 1) [ ] solar panel on the mini roof for power, otherwise someone's going to be charging batteries constantly.
-2. [ ] GPU renderfarm type situation with the image generation so make it faster
-
-## Highlights
-
-- **Chrome Speech to Text Web Api**: talk at your internet browser!
-- **Twilio Node Api**: SMS to nodejs
-- **Motion Sensor Magic** Wave hand in the air and stuff happens, magically
-- **SQGAN-CLIP Art**: Generated Images
+2) [ ] GPU renderfarm type situation with the image generation so make it faster
+3) [ ] MQQT block for intercommunication
 
 ## Setup and configuration
 
@@ -43,17 +44,19 @@ I've decided to make a mini Exploratorium science lab for the street because tho
 4. clone the code
 ```git clone git@github.com:zoobot/twilio-block.git```
 ```git clone git@github.com:zoobot/vqgan-clip-docker.git```
-5. push code to the fleets
+5. cd to each repo
+6. push code to the fleets (Nuc for vqgan-clip-docker and pizero for twilio)
 ```balena push username\fleetname```
 OR local dev
 ```balena push 644b374.local```
 ```balena push UUID.local```
 ```balena push internal-ip-address```
-6. Setup Twilio account and get a phone number and setup balena public urls on the twiml and phone api messaging
+7. Setup Twilio account and get a phone number and setup balena public urls on the twiml and phone api messaging
 
 ### Deploying
  
-Need to figure out multiarchitecture/multifleet deployment.
+Need to figure out multiarchitecture/multifleet deployment!
+Currently just run balena push with the twilio-block and sqgan-clip-docker separtely. Both repos have separate docker-compose.yml.
 
 ## Documentation
 
