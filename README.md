@@ -10,22 +10,23 @@ I've decided to make a mini Exploratorium science lab for the street because tho
 
 ### What I have working so far: 
 
-[x] twilio sms /web speech to text -> node server to sqlite on pi zero fleet. (could this be a balena block?)
-[x] motion sensor trigger using nodejs's onoff GPIO library (awesome and easy!)
-[x] SQGAN-CLIP dockerized and generating images on the NUC
-[x] a box for the mini lab
+1) [x] [twilio-block](https://github.com/zoobot/twilio-block) sms /web speech to text -> node server to sqlite on pi zero fleet. (Could this be a balena block?)
+2) [x] SQGAN-CLIP dockerized and generating images on the NUC
+3) [x] motion sensor trigger to turn on an off microphone
+4) [x] a box for the mini lab
 
 ### Todo:
 
-[-] Fix the fastapi server on the SQGAN docker(had issues with volumes in 2.1 docker so paths are wonky)
-[-] dig a post hole and mount the lab outside
-[-] gather documentation from notes, git wiki, turn into blog post
-[-] add a microphone
-[-] setup new 1.5" TFTs
+1) [ ] Fix the fastapi server on the SQGAN docker(had issues with volumes in 2.1 docker so paths are wonky)
+4) [ ] add a micro usb pi microphone
+5) [ ] setup new 1.5" TFT instead of big 9" TFT
+2) [ ] dig a post hole and mount the lab outside
+6) [ ] Steel sheet roof for mini lab box
+3) [ ] gather documentation from notes, git wiki, turn into blog post
 
 ### Nice to haves:
 
-[-] solar panel on the mini roof for power, otherwise someone's going to be charging batteries constantly.
+1) [ ] solar panel on the mini roof for power, otherwise someone's going to be charging batteries constantly.
 
 ## Highlights
 
@@ -44,7 +45,10 @@ I've decided to make a mini Exploratorium science lab for the street because tho
 5. push code to the fleets
 ```balena push username\fleetname```
 OR local dev
-```balena push ipaddress```
+```balena push 644b374.local```
+```balena push UUID.local```
+```balena push internal-ip-address```
+6. Setup Twilio account and get a phone number and setup balena public urls on the twiml and phone api messaging
 
 ### Deploying
 
@@ -54,11 +58,11 @@ Or add the following service to your `docker-compose.yml`:
 
 ## Documentation
 
-Head over to our [docs](https://github.com/zoobot/hidolly/wiki) for detailed installation and usage instructions, customization options and more!
+Check the [wiki](https://github.com/zoobot/hidolly/wiki) for not quite organized yet docs.
 
 ## Motivation
 
-I, like everyone, enjoy all things cute. I'd been tasked with finding someone to build a mini library for my kids school for earth day. I asked my friend Mariel's husband to build the library and Mariel promptly sent me down the rabbit hole of mini galleries and mini library designs. I'd already been thoroughly engrossed in researching image generation and speech to text tools for the balena residency and so a mind mashup occurred. Hazzah!
+I, like everyone, enjoy all things cute. I'd been tasked with finding someone to build a mini library for my kid's school's Oak grove for earth day. I asked my friend Mariel's husband to build school mini library so Mariel promptly sent me down the rabbit hole of mini gallery and library design perusal. I'd already been thoroughly engrossed in researching  SQGAN-CLIP image generation and speech to text tools for the balena residency and thankfully a mind mashup occurred. Hazzah! 
 
 
 ## Getting Help
@@ -66,3 +70,5 @@ I, like everyone, enjoy all things cute. I'd been tasked with finding someone to
 If you're having any problem, please [raise an issue](https://github.com/balenablocks/template/issues/new) on GitHub and we will be happy to help.
 
 ## Contributing
+
+Have at it!
