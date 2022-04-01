@@ -64,7 +64,7 @@ Check the [wiki](https://github.com/zoobot/hidolly/wiki) for not quite organized
 
 ## Motivation
 
-I, like everyone, enjoy all things cute. I'd been tasked with finding someone to build a mini library for my kid's school's Oak grove for earth day. I asked my friend Mariel's husband to build school mini library so Mariel promptly sent me down the rabbit hole of mini gallery and library design perusal. I'd already been thoroughly engrossed in researching  SQGAN-CLIP image generation and speech to text tools for the balena residency and thankfully a mind mashup occurred. Hazzah! 
+I, like everyone, enjoy all things cute. I'd been tasked with finding someone to build a mini library for my kid's school's Oak grove for earth day. I asked my friend Mariel's husband to build school mini library so Mariel promptly sent me down the rabbit hole of mini gallery and library design perusal. I'd already been thoroughly engrossed in researching  SQGAN-CLIP image generation and speech to text tools for the balena residency and thankfully a mind mashup occurred. Hazzah! Exploratorium Mini Science LAb 471 is coming to fruition.
 
 
 ## Getting Help
