@@ -27,6 +27,7 @@ I've decided to make a mini Exploratorium science lab for the street because tho
 ### Nice to haves:
 
 1) [ ] solar panel on the mini roof for power, otherwise someone's going to be charging batteries constantly.
+2. [ ] GPU renderfarm type situation with the image generation so make it faster
 
 ## Highlights
 
@@ -38,7 +39,7 @@ I've decided to make a mini Exploratorium science lab for the street because tho
 ## Setup and configuration
 
 1. Create a fleet of zeros. Nice to have one as primary and one as backup sms server
-2. Create a fleet of GPUs ideally
+2. Create a fleet of GPUs ideally ( I am trying on the NUC which is slow )
 4. clone the code
 ```git clone git@github.com:zoobot/twilio-block.git```
 ```git clone git@github.com:zoobot/vqgan-clip-docker.git```
