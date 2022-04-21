@@ -5,7 +5,7 @@
 
 ## Status
  
-I've decided to make a mini Exploratorium science lab for the street because those little libraries and art galleries are so cute. With a mini science lab, there can be a lot of neighborhood magnet and rocks sharing, which is great, plus small electronic science and robotic experiments. First round mini lab "exhibit" will be sms and web speech to text to image generator to pi TFT. Thanks to [@nucleardreamer](https://github.com/nucleardreamer) for all the great ideas and for working on this with me!
+I've decided to make a mini Exploratorium science lab for the street. With a mini science lab, there can be a lot of neighborhood magnet and rocks sharing, which is great, plus small electronic science and robotic experiments. First round will be sms and web speech to text to image generator. Thanks to [@nucleardreamer](https://github.com/nucleardreamer) for all the great ideas and for working on this with me!
 
 ## Highlights
 
@@ -48,10 +48,9 @@ I've decided to make a mini Exploratorium science lab for the street because tho
 6. push code to the fleets (Nuc for vqgan-clip-docker and pizero for twilio)
 ```balena push username\fleetname```
 OR local dev
-```balena push 644b374.local```
 ```balena push UUID.local```
-```balena push internal-ip-address```
-7. Setup Twilio account and get a phone number and setup balena public urls on the twiml and phone api messaging
+```balena push internal-ip-address``` 
+7. Setup Twilio account and get a phone number and setup balena public urls on the twiml and phone api messaging at [twilio](https://www.twilio.com/docs/sms/quickstart/nodejs)
 
 ### Deploying
  
@@ -64,7 +63,7 @@ Check the [wiki](https://github.com/zoobot/hidolly/wiki) for not quite organized
 
 ## Motivation
 
-I, like everyone, enjoy all things cute. I'd been tasked with finding someone to build a mini library for my kid's school's Oak grove for earth day. I asked my friend Mariel's husband to build school mini library so Mariel promptly sent me down the rabbit hole of mini gallery and library design perusal. I'd already been thoroughly engrossed in researching  SQGAN-CLIP image generation and speech to text tools for the balena residency and thankfully a mind mashup occurred. Hazzah! Exploratorium Mini Science LAb 471 is coming to fruition.
+I love the science experiements at the Exploratorium and it would be great to have a neighborhood crowd sourced mini version of it. DALLE-2 is a fascinating evolution of human knowledge and has inspired so much interesting art generation. 
 
 
 ## Getting Help

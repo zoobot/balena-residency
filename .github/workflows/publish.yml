@@ -1,12 +1,12 @@
-name: Build and publish container
+name: hidolly
 
 on:
   push:
-    branches: [master,main]
+    branches: [main]
   workflow_dispatch:
     inputs:
       reason:
-        description: 'Why ?'
+        description: 'Wrapper for Mini Exploratorium'
         required: false
         default: ''
 
